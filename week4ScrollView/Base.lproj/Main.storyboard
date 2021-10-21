@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_2" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-UX-NrS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhE-NJ-bPa">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                 <subviews>
@@ -79,10 +82,12 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="XzT-md-dCq"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="SAVE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="koy-o0-bhM" firstAttribute="leading" secondItem="gDo-J3-2lV" secondAttribute="leading" constant="20" id="2Aq-Uw-KOI"/>
                                             <constraint firstAttribute="trailing" secondItem="koy-o0-bhM" secondAttribute="trailing" constant="20" id="5n7-Jc-6uy"/>
@@ -96,6 +101,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="gDo-J3-2lV" secondAttribute="trailing" id="7sS-GC-3pp"/>
                                     <constraint firstItem="gDo-J3-2lV" firstAttribute="top" secondItem="ZhE-NJ-bPa" secondAttribute="top" id="Cmg-1W-u5d"/>
@@ -108,7 +114,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="t7B-UX-NrS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CJd-kb-cld"/>
                             <constraint firstItem="ZhE-NJ-bPa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LUm-cF-UlS"/>
+                            <constraint firstAttribute="trailing" secondItem="t7B-UX-NrS" secondAttribute="trailing" id="OHV-EE-lSz"/>
+                            <constraint firstAttribute="bottom" secondItem="t7B-UX-NrS" secondAttribute="bottom" id="TNd-pm-h2m"/>
+                            <constraint firstItem="t7B-UX-NrS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TPf-wn-izy"/>
                             <constraint firstAttribute="bottom" secondItem="ZhE-NJ-bPa" secondAttribute="bottom" id="cU6-ej-viB"/>
                             <constraint firstItem="ZhE-NJ-bPa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dAM-XG-ija"/>
                             <constraint firstAttribute="trailing" secondItem="ZhE-NJ-bPa" secondAttribute="trailing" id="fp4-eW-S6Y"/>
@@ -122,6 +132,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background_2" width="640" height="1136"/>
         <image name="user" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
